@@ -45,4 +45,8 @@ class Coffee:
         # Extract prices from all orders for this coffee
         prices = [order.price for order in self.orders()]
         # Return the average if there are prices, otherwise return 0
+ 
         return sum(prices) / len(prices) if prices else 0
+
+    def __repr__(self):
+        return f"Coffee({self.name})"

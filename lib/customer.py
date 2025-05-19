@@ -62,5 +62,5 @@ class Customer:
         # Return the customer who spent the most on this coffee
         return max(customer_spending, key=customer_spending.get)
 
-
-# Import the Order class at the end to avoid circular import issues
+    def __repr__(self):
+        return f"Customer({self.name})"

@@ -5,14 +5,20 @@ from order import Order
 # Create instances
 c1 = Customer("Alice")
 c2 = Customer("Bob")
+c3 = Customer("Charlie")
+c4 = Customer("Diana")
 
 cof1 = Coffee("Espresso")
 cof2 = Coffee("Latte")
+cof3 = Coffee("Cappuccino")
+cof4 = Coffee("Latte")
 
 # Valid Order
 try:
     o1 = Order(c1, cof1, 4.5)
     o2 = Order(c2, cof2, 9.0)
+    o3 = Order(c3, cof3, 7.5)
+    o4 = Order(c4, cof4, 8.2)
     print(" Valid orders created.")
 except Exception as e:
     print("Error creating valid order:", e)
